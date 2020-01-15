@@ -14,7 +14,7 @@ public class Wcontroller {
 	@RequestMapping("/json")
     public Map<String, String> jsonReturnSample(){
         Map<String, String> map = new HashMap<>();
-        map.put("name", "全己");
+        map.put("name", "全己t");
         map.put("age", "40");
         return map;
     }

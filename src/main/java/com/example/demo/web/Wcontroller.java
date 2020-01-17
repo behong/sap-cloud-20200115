@@ -17,6 +17,8 @@ public class Wcontroller {
         map.put("name", "홍성test");
         map.put("age", "40");
         return map;
+        
+     //   https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_OPLACCTGDOCITEMCUBE_SRV/A_OperationalAcctgDocItemCube
     }
 	
 	@RequestMapping("/welcome")

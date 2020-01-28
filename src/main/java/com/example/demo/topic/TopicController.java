@@ -17,6 +17,7 @@ public class TopicController {
 	
 	@RequestMapping("/topics")
 	public List<Topic> getAllTopics(){
+		System.out.println("topics start");
 		return topicservice.getAllTopics(); 
 	}
 	
@@ -35,4 +36,9 @@ public class TopicController {
 		topicservice.updateTopic(id,topic);
 	}	
 
+	@RequestMapping("/topicsTest2")
+	public String Test2() {
+		System.out.println("TEST2");
+		return "test2";
+	}
 }

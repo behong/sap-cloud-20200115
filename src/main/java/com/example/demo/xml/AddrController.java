@@ -15,10 +15,11 @@ public class AddrController {
 	
 		@RequestMapping(method = RequestMethod.GET, value = "/xmlTest")
 	    public Result<Address> httpGet( HttpServletRequest request, HttpServletResponse response,@RequestParam Map<String, Object> map ) throws Exception {
-	        
+			
 		    ParseService parseService = new XmlParseServiceImpl();
 	        Response<Address> context = new Response<Address>();
-	        return context.getResponse(parseService, map);
-	        
-	    }
+	        return context.getResponse(parseService, map);   
+	
+		}
+	    	
 }

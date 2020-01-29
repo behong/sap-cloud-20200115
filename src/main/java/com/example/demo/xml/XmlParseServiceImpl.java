@@ -61,14 +61,9 @@ public class XmlParseServiceImpl implements ParseService {
 	
 	
 	private List<Address> parseXmlStr(String xmlStr){
-		// 상태값 확인
-		log.info(" 상태값 확인 xmlStr == ",xmlStr.valueOf(xmlStr));		
 		List<Address> addrList = new ArrayList<Address>();
 		StringReader sr = new StringReader(xmlStr);
-		// 상태값 확인
-		log.info(" 상태값 확인 sr == ",sr.toString());		
 		InputSource is = new InputSource(sr);
-		
 		// 상태값 확인
 		log.info(" 상태값 확인 is == ",is.toString());				
 		
@@ -76,7 +71,6 @@ public class XmlParseServiceImpl implements ParseService {
 
 		try {
 			Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(is);
-			
 			// 상태값 확인
 			log.info(" 상태값 확인 doc == ",doc.toString());
 			

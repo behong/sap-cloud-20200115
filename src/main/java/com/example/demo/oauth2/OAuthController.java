@@ -34,7 +34,7 @@ public class OAuthController {
 	}	
 	
 	@RequestMapping("/httpSci")
-	public Document httpSci() throws IOException, JSONException {
+	public Document httpPostSci() throws IOException, JSONException {
 
         HttpClient httpclient = HttpClientBuilder.create().build();
 		final String parameters = "?name=더미&group=더미2";

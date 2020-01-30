@@ -21,9 +21,9 @@ public class Wcontroller {
      //   https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_OPLACCTGDOCITEMCUBE_SRV/A_OperationalAcctgDocItemCube
     }
 	
-	@RequestMapping("/welcome")
+	@RequestMapping("/")
 	String welcome() {
-		return "welcome";
+		return "index.html";
 	}
 
 }
